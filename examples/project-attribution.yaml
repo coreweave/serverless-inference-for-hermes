@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2026 CoreWeave, Inc.
+# SPDX-License-Identifier: MIT
+# SPDX-PackageName: serverless-inference-for-hermes
+
+# Optional explicit custom profile for project-attributed requests.
+# Select --provider custom:coreweave-project and a model available to your account.
+providers:
+  coreweave-project:
+    base_url: https://api.inference.wandb.ai/v1
+    api_key_env: COREWEAVE_API_KEY
+    extra_headers:
+      openai-project: TEAM/PROJECT

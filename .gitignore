@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2026 CoreWeave, Inc.
+# SPDX-License-Identifier: MIT
+# SPDX-PackageName: serverless-inference-for-hermes
+
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.local/
+reports/

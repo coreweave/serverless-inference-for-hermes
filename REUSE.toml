@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2026 CoreWeave, Inc.
+# SPDX-License-Identifier: MIT
+# SPDX-PackageName: serverless-inference-for-hermes
+
+version = 1
+SPDX-PackageName = "serverless-inference-for-hermes"
+SPDX-PackageSupplier = "CoreWeave, Inc."
+SPDX-PackageDownloadLocation = "https://github.com/coreweave/serverless-inference-for-hermes"
+
+[[annotations]]
+path = [".reuse/templates/default_template.jinja2", ".github/workflows/.gitkeep"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 CoreWeave, Inc."
+SPDX-License-Identifier = "MIT"
