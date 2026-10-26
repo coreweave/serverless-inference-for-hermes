@@ -14,5 +14,5 @@ manifest = dict(
     if line.strip() and not line.lstrip().startswith("#")
 )
 assert manifest["kind"] == "model-provider"
-assert manifest["name"] == "serverless-inference-for-hermes"
+assert manifest["name"] == "coreweave"
 print("PASS: Python syntax and model-provider manifest. No Hermes runtime or network executed.")

@@ -40,7 +40,7 @@ class ProviderContractTests(unittest.TestCase):
         network = patch.object(socket.socket, "connect", side_effect=AssertionError("Network disabled"))
         network.start()
         cls.addClassCleanup(network.stop)
-        installed = cls.home / "plugins" / "serverless-inference-for-hermes"
+        installed = cls.home / "plugins" / "coreweave"
         installed.mkdir(parents=True)
         for name in ("__init__.py", "plugin.yaml"):
             shutil.copyfile(PLUGIN / name, installed / name)

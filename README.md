@@ -23,12 +23,16 @@ target Hermes v0.22.2, commit `d923a5eb487a17c0a68801bba9ef0f56c81040a8`.
 Installation command:
 
 ```bash
-hermes plugins install coreweave/serverless-inference-for-hermes
+hermes plugins install coreweave
 ```
+
+If you installed the earlier `serverless-inference-for-hermes` entry, run
+`hermes plugins remove serverless-inference-for-hermes` in that Hermes profile
+before installing `coreweave`, so only one copy registers the provider.
 
 For development in an approved workspace, copy only `__init__.py` and
 `plugin.yaml` into
-`$HERMES_HOME/plugins/model-providers/serverless-inference-for-hermes/`.
+`$HERMES_HOME/plugins/model-providers/coreweave/`.
 Keep private test evidence and local notes outside the installed plugin.
 
 Get an inference-enabled [W&B API key](https://wandb.ai/authorize). Supply it through
