@@ -39,7 +39,7 @@ def main():
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
     run = PLUGIN / ".local" / ("live-" + stamp)
     home = run / "home"
-    installed = home / "plugins" / "serverless-inference-for-hermes"
+    installed = home / "plugins" / "coreweave"
     installed.mkdir(parents=True)
     plugin_file_sha256 = {}
     for name in ("__init__.py", "plugin.yaml"):
